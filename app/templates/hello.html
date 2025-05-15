@@ -16,6 +16,25 @@
             <li>{{ i }}: Hello {{ name }}! </li>
             {% endfor %}
         </ul>
+        <header>
+            <h1>Hello BIPM</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/titanic">Titanic</a>
+                <a href="https://github.com/maryamayman" target="_blank">About</a>
+            </nav>
+        </header>
+    
+        <main>
+            <p>Welcome to my simple Flask web app.</p>
+            <a href="https://www.hwr-berlin.de/" target="_blank">Visit HWR Berlin</a>
+            <br><br>
+            <img src="{{ url_for('static', filename='images/your_image.jpg') }}" alt="My Image" width="300">
+        </main>
+    
+        <footer>
+            <p>Made by Maryam Arteen somehow</p>
+        </footer>
     </main>
 </body>
 
