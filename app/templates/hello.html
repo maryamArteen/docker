@@ -1,42 +1,46 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My first dynamic Website</title>
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hello BIPM</title>
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
 </head>
-
 <body>
-    <main>
-        <h1>I have been seen {{ count }} times.</h1>
-        <ul>
-            {% for i in range(1, count+1) %}
-            <li>{{ i }}: Hello {{ name }}! </li>
-            {% endfor %}
-        </ul>
-        <header>
-            <h1>Hello BIPM</h1>
-            <nav>
-                <a href="/">Home</a>
-                <a href="/titanic">Titanic</a>
-                <a href="https://github.com/maryamayman" target="_blank">About</a>
-            </nav>
-        </header>
-    
-        <main>
-            <p>Welcome to my simple Flask web app.</p>
-            <a href="https://www.hwr-berlin.de/" target="_blank">Visit HWR Berlin</a>
-            <br><br>
-            <img src="{{ url_for('static', filename='images/your_image.jpg') }}" alt="My Image" width="300">
-        </main>
-    
-        <footer>
-            <p>Made by Maryam Arteen somehow</p>
-        </footer>
-    </main>
+
+  <header>
+    <h1>Hello BIPM</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="https://github.com/maryamayman" target="_blank">About</a>
+      <a href="https://www.hwr-berlin.de/" target="_blank">HWR Berlin</a>
+      <a href="https://www.kaggle.com/code/maryamaarteen/notebookfece20ef62">Titanic</a>
+
+    </nav>
+  </header>
+
+  <main>
+    <h3>HI, this is a web page that took way too much time to build.</h3>
+<br>
+    <h4>Here is some fun facts about Titanic!</h4>
+    <h5>And what is think about them?</h5>
+    <p>The Titanic was never actually described as "unsinkable". I feel they had a good lawyer </p>
+    <p>The Titanic had a swimming pool on board! very cool for 1909</p>
+    <p>There were 3 dogs on board, and they all survived. I consider it a happy ending </p>
+    <p>There was a ship called the Titanic II, but it never sailed! understandable </p>
+    <p>A third-class ticket at Titanic cost $40, which is approximately $900 in today’s currency. too much to die in the end!</p>
+    <br>
+    <h2>I have been seen {{ count }} times.</h2>
+
+
+    <figure>
+      <img src="{{ url_for('static', filename='/Users/maryamayman/Desktop/docker /app/templates/Untitled.jpg') }}"
+           alt="My chosen image" width="300">
+      <figcaption>Made by Maryam Arteen somehow</figcaption>
+    </figure>
+  </main>
+  <footer>
+    <p>Made by Maryam Arteen somehow</p>
+  </footer>
 </body>
-
 </html>
-
